@@ -9,7 +9,7 @@
 - [Introduction](https://github.com/moorcode/WordPress-Job-Dashboard/blob/main/README.md#introduction)
   - [Process & Requirements](https://github.com/moorcode/WordPress-Job-Dashboard#process--requirements)
   - [Architecture](https://github.com/moorcode/WordPress-Job-Dashboard#architecture)
-  - [Repository Structure]()
+  - [Repository Structure](https://github.com/moorcode/WordPress-Job-Dashboard#repository-structure)
 - [Create the custom plugin](https://github.com/moorcode/WordPress-Job-Dashboard#i-create-plugin)
 - Build the database and API framework
 - Connect to one API (e.g., Ashby)
