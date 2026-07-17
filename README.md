@@ -138,6 +138,72 @@ Development Workflow
 Production WordPress Site
 ```
 
-# Usage
+# Repository Structure
+
+```text
+wordpress-job-dashboard/
+│
+├── README.md
+├── .gitignore
+├── composer.json
+├── package.json
+├── wp-config-sample.php
+│
+├── wordpress/
+│   └── (WordPress core - usually ignored in Git)
+│
+├── wp-content/
+│   │
+│   ├── plugins/
+│   │   │
+│   │   └── job-api-manager/
+│   │       │
+│   │       ├── job-api-manager.php
+│   │       ├── uninstall.php
+│   │       ├── includes/
+│   │       │   ├── class-plugin-bootstrap.php
+│   │       │   ├── class-database.php
+│   │       │   ├── class-rest-api.php
+│   │       │   └── class-settings.php
+│   │       │
+│   │       ├── admin/
+│   │       │   ├── class-admin-ui.php
+│   │       │   └── settings-pages.php
+│   │       │
+│   │       ├── api/
+│   │       │   ├── interface-ats-provider.php
+│   │       │   ├── class-ashby.php
+│   │       │   ├── class-greenhouse.php
+│   │       │   ├── class-lever.php
+│   │       │   └── class-workday.php
+│   │       │
+│   │       ├── database/
+│   │       │   ├── migrations.php
+│   │       │   └── schema.php
+│   │       │
+│   │       ├── frontend/
+│   │       │   ├── shortcodes.php
+│   │       │   ├── blocks/
+│   │       │   └── templates/
+│   │       │
+│   │       ├── assets/
+│   │       │   ├── css/
+│   │       │   └── js/
+│   │       │
+│   │       └── tests/
+│   │
+│   ├── themes/
+│   │
+│   └── uploads/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── api-integrations.md
+│   └── database-schema.md
+│
+└── .github/
+    └── workflows/
+        └── tests.yml
+```
 
 ## I. Create Plugin
